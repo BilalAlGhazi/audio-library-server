@@ -1,9 +1,10 @@
 const s3 = require("s3");
+const keys = require("../../keys");
 
 const client = s3.createClient({  
   s3Options: {
-    accessKeyId: "AKIAI3MOGDY7NUBSCG6A",
-    secretAccessKey: "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"
+    accessKeyId: keys.amazonAccessKey,
+    secretAccessKey: keys.amazonSecretKey
   }
 });
 
