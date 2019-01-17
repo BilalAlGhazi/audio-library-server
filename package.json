@@ -9,6 +9,7 @@
   "author": "Bilal Alghazi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "s3": "^4.4.0"
   }
 }
