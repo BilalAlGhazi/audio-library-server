@@ -1,6 +1,32 @@
 [
   {
+    "id": "1",
     "name": "Believe",
-    "data-url": "/2.0/?method=track.getInfo&artist=cher&track=believe&format=json"
+    "metadata": "/2.0/?method=track.getInfo&artist=cher&track=believe&format=json",
+    "filename": "Amarasiri_Peiris_-_08_-_Kath_Kawuruwath.mp3"
+  },
+  {
+    "id": "2",
+    "name": "Believe2",
+    "metadata": "/2.0/?method=track.getInfo&artist=cher&track=believe&format=json",
+    "filename": "Head_Vs_Wall_-_05_-_A_Fool_Of_The_First_Water.mp3"
+  },
+  {
+    "id": "3",
+    "name": "Believe3",
+    "metadata": "/2.0/?method=track.getInfo&artist=cher&track=believe&format=json",
+    "filename": "Lobo_Loco_-_01_-_Jules_Verne_Machines_ID_1007.mp3"
+  },
+  {
+    "id": "4",
+    "name": "Believe4",
+    "metadata": "/2.0/?method=track.getInfo&artist=cher&track=believe&format=json",
+    "filename": "Lobo_Loco_-_01_-_Just_a_Moment_ID_944.mp3"
+  },
+  {
+    "id": "5",
+    "name": "Believe5",
+    "metadata": "/2.0/?method=track.getInfo&artist=cher&track=believe&format=json",
+    "filename": "Lobo_Loco_-_03_-_Psychedelic_Blues_1_ID_997.mp3"
   }
 ]
