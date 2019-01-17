@@ -17,16 +17,20 @@ exports.getTrackDetails = async function(req, res){
     return o.id == trackId; 
   });
 
-  const result = await axios.get(`${config.metadataAPIURL}${playlist[itemIndex].metadata}&api_key=${keys.lastFmApiKey}`);
-  res.json(
-    {
-      name: result.data.track.name,
-      duration: result.data.track.duration,
-      artistName: result.data.track.artist.name,
-      albumName: result.data.track.album.title,
-      image: result.data.track.album.image
-    }
-  );
+  try{
+    const result = await axios.get(`${config.metadataAPIURL}${playlist[itemIndex].metadata}&api_key=${keys.lastFmApiKey}`);
+    res.json(
+      {
+        name: result.data.track.name,
+        duration: result.data.track.duration,
+        artistName: result.data.track.artist.name,
+        albumName: result.data.track.album.title,
+        image: result.data.track.album.image
+      }
+    );
+  } catch (e) {
+    res.status(500).send("An error occured");
+  }
 }
 
 exports.streamTrack = function(req, res){
